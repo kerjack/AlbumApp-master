@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Consumer-Producer</title>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+    <h2>Asynchronous Animation</h2>
+        <div id="errorArea"></div>
+        <p>Click the button below to see what happens.</p>
+        <p><button class="btn btn-default" onclick="produce()">Produce</button></p>
+        <p><button class="btn btn-default" onclick="consume()">Consume</button></p>
+    </div><!-- end of jumbotron -->
+
+      <div class="container col-md-12">
+
+          <div class="container col-md-5">
+
+          <div id="producing" style="background-color: rgb(245, 245, 245);">
+              <h1 id="mainHeader2">Awaiting</h1>
+              <div id="prodArea"></div>
+          </div>
+
+          </div>
+
+          <div class="container col-md-5">
+
+          <div id="consuming" style="background-color: rgb(245, 245, 245);">
+              <h1 id="consumingHeader">Consuming</h1>
+              <div id="conArea"></div>
+          </div>
+
+          </div>
+
+      </div>
+  </div>
+
+  </body>
+</html>
